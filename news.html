@@ -15,18 +15,23 @@ body{
 h1{
     text-align:center;
 }
-ul{
-    padding-left:20px;
+.notice-card{
+    border:1px solid #ccc;
+    border-radius:8px;
+    padding:15px;
+    margin-bottom:20px;
 }
-li{
-    margin-bottom:12px;
-}
-a{
+.notice-card a{
     text-decoration:none;
+    color:black;
+}
+.date{
+    color:#666;
+    font-size:14px;
 }
 .back{
-    margin-top:30px;
     display:inline-block;
+    margin-top:20px;
 }
 </style>
 </head>
@@ -35,29 +40,36 @@ a{
 <p>
 新しいお知らせから順に掲載しています。
 </p>
-<ul>
 <!--
 【新規お知らせ追加テンプレート】
-
-<li>
-<a href="news/YYYY-MM-title.html">
-YYYY/MM/DD　お知らせタイトル
-</a>
-</li>
-
-例
-<li>
-<a href="news/2026-07-festival.html">
-2026/07/01　夏祭りのお知らせ
-</a>
-</li>
+<div class="notice-card">
+    <div class="date">
+        YYYY/MM/DD
+    </div>
+    <h2>
+        <a href="news/YYYY-MM-title.html">
+            お知らせタイトル
+        </a>
+    </h2>
+    <p>
+        お知らせ概要を2～3行程度で記載
+    </p>
+</div>
 -->
-<li>
-<a href="news/2026-06-homepage.html">
-2026/06/20　ホームページ公開
-</a>
-</li>
-</ul>
+<div class="notice-card">
+<div class="date">
+    2026/06/20
+</div>
+<h2>
+    <a href="news/2026-06-homepage.html">
+        ホームページ公開
+    </a>
+</h2>
+<p>
+    町内会ホームページを公開しました。
+    今後、お知らせや情報共有を掲載していきます。
+</p>
+</div>
 <a class="back" href="index.html">
 ← トップページへ戻る
 </a>
