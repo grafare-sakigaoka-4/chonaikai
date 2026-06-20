@@ -15,45 +15,49 @@ body{
 h1{
     text-align:center;
 }
-.notice{
-    border:1px solid #ccc;
-    border-radius:8px;
-    padding:15px;
-    margin-bottom:20px;
+ul{
+    padding-left:20px;
 }
-.date{
-    color:#666;
-    font-size:14px;
+li{
+    margin-bottom:12px;
+}
+a{
+    text-decoration:none;
 }
 .back{
+    margin-top:30px;
     display:inline-block;
-    margin-top:20px;
 }
 </style>
 </head>
 <body>
 <h1>お知らせ</h1>
-<div class="notice">
-<div class="date">2026/06/20</div>
-<h2>ホームページ公開</h2>
 <p>
-町内会ホームページを公開しました。
+新しいお知らせから順に掲載しています。
 </p>
-</div>
-<div class="notice">
-<div class="date">2026/06/15</div>
-<h2>夏祭りのお知らせ</h2>
-<p>
-詳細が決まり次第掲載します。
-</p>
-</div>
-<div class="notice">
-<div class="date">2026/06/01</div>
-<h2>6月回覧板</h2>
-<p>
-回覧板を掲載しました。
-</p>
-</div>
+<ul>
+<!--
+【新規お知らせ追加テンプレート】
+
+<li>
+<a href="news/YYYY-MM-title.html">
+YYYY/MM/DD　お知らせタイトル
+</a>
+</li>
+
+例
+<li>
+<a href="news/2026-07-festival.html">
+2026/07/01　夏祭りのお知らせ
+</a>
+</li>
+-->
+<li>
+<a href="news/2026-06-homepage.html">
+2026/06/20　ホームページ公開
+</a>
+</li>
+</ul>
 <a class="back" href="index.html">
 ← トップページへ戻る
 </a>
